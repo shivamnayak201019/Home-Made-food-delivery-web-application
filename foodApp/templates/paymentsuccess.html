@@ -1,0 +1,39 @@
+{%extends 'nav.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%block mymessage%}
+    <section class="h-100h-custom" style="position: absolute;background-color: #eee;margin-top:200px; margin-left: 40%;">
+        <div class="container py-5 h-100" >
+          <div class="row d-flex justify-content-center align-items-center"style="height:300px">
+      
+                      <div class="card bg-primary text-white rounded-3 text-center justify-content-center align-items-center " style="width:18rem;height:300px">
+                       
+                  
+                              <div data-mdb-input-init class="form-outline form-white mb-4">
+                                Thank You for Visiting: {{paymentobj.customerid.c_first_name}}
+                              </div>
+                            
+                              <div data-mdb-input-init class="form-outline form-white mb-4">
+                                  your order id: {{paymentobj.oid.ordernumber}}
+                              </div>
+
+                              <div data-mdb-input-init class="form-outline form-white mb-4">
+                                  Status: {{paymentobj.paymentstatus}}
+                              </div>
+                      
+                          <hr class="my-4">
+             
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      {%endblock%}
+</body>
+</html>

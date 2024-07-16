@@ -1,0 +1,20 @@
+{%extends 'nav.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/foodApp/static/HM.css">
+</head>
+<body>
+    {%block mymessage%}
+    <div class="services">
+        <a href="{%url 'delivery'%}"><button type="button" class="deljoin">Delivery Service</button></a>
+        <a href="{%url 'service'%}"><button type="submit"class="chefjoin"> Services</button></a>
+    </div>
+
+    {%endblock%}
+</body>
+</html>

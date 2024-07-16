@@ -1,0 +1,753 @@
+*{
+    padding:0px;
+    margin:0px;
+
+}
+
+
+.navout{
+    width:100%;
+    height:100px;
+    position: fixed;
+    display:flex;
+    align-items: center;
+    justify-content:end;
+    border-bottom:2px solid black;
+    background-color: #430203;
+    /* background-image:linear-gradient(to right,rgba(251, 193, 228, 1),rgb(249, 187, 224)); */
+    z-index: 2;
+   
+    
+
+}
+.navout i{
+    color:white;
+
+
+}
+
+.navout div{
+    margin-bottom: 50px;
+}
+.navout button{
+  
+    font-size: 20px;
+    margin-right:4%;
+    text-align: center;
+    background-color:#430203;
+    border: none;
+    
+    
+}
+
+.navout button a{
+  
+    display:flex;
+    flex-direction: column;
+    text-decoration:none;
+    color:white;
+    font-size: 25px;
+
+
+
+
+}
+.navout a:hover{
+    color: red;
+    transition: 0.5s;
+}
+/* .navout .hm_logo{
+    margin-left: 20px;
+    margin-bottom:40px;
+    
+    
+
+} */
+
+
+.navout .hm_logo img{
+    width:60px;
+    height:60px;
+
+}
+
+.userName span{
+    position:absolute;
+    margin-top:0px;
+    left:120px;
+    color:black;
+    background:linear-gradient(to bottom right,rgb(242, 191, 97),rgb(232, 29, 29));
+    border:2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.userName{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:100px;
+    color: white;
+}
+
+.content{
+    /* height:1000px; */
+    background-image:linear-gradient(to bottom right,rgb(255, 255, 255,1),rgb(255, 255, 255,1));
+}
+.cusine h1{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 30px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50PX;
+    z-index: 1;
+    
+}
+.cusine h1 .multiple-text{
+    font-family: "Righteous", sans-serif;
+    
+}
+
+.card1{
+
+    width:250px;
+    height:270px;
+    margin: 30px;
+    background-image:linear-gradient(to bottom right,rgba(247, 247, 247,0.7),rgba(253,127,32,1));
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.card1 h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    padding-top: 15px;
+}
+img{  
+    width:200px;
+    height:182px;
+    margin-top: 10px;;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+    
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+/* .container div{
+
+   
+} */
+.container div:hover{
+    box-shadow: 5px 5px 10px gray;
+
+}
+
+
+
+
+/* ------------------------------------------------LOGIN-------------------------- */
+.login_body{
+    background-image:url("/foodApp/static/pexels-ella-olsson-1640773.jpg");
+    background-size: cover;
+}
+.outer{
+    width:100%;
+    height:500px;
+    position: absolute;
+    margin-top:150px ;
+    
+    
+}
+.outer .form{
+    width:400px;
+    height:500px;
+    background-color: white;
+    /* background-color: #D8A7B1; */
+    border:2px solid black;
+    border-radius: 15px;
+    margin: auto;
+
+}
+.inner{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    
+}
+.incorrect {
+    height:20px
+}
+.inner input{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    height:25px;
+}
+
+.login{
+    
+    text-align: center;
+    background-color: #FAE8E0;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+.login h1{
+    margin: 0px;
+    
+
+}
+.inner div{
+    margin-top: 70px;
+}
+.input1 button{
+    margin-left:70px;
+    margin-top:60px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width:100px;
+    height:30px;
+    background-color: #430203;
+    
+    color:white;
+    font-size: 20px;
+    font-weight: 650;
+    
+
+}
+.input1 button a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 650;
+   
+}
+#displogin{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 650;
+    
+}
+
+
+
+/* -----------------------------register-------------------------------- */
+
+.router{
+    width:100%;
+    position: absolute;
+    margin-top:110px ;
+    text-align: center;
+    
+    
+}
+.router form{
+    width:1000px;
+    /* height:500px; */
+    background-color: white;
+    border:2px solid black;
+    border-radius: 15px;
+    margin: auto;
+
+}
+.rinner{
+    height:450px;
+    font-size: 25px;
+    padding-left: 20px;
+    display: flex;
+       
+}
+
+
+
+.rinner input{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    height:25px;
+    width:400px;
+    margin: auto;
+    
+}
+
+
+
+.rlogin{
+    
+    text-align: center;
+    background-color: #FAE8E0;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+.rlogin h1{
+    margin: 0px;
+    
+
+}
+.rinner div{
+    
+    padding-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.rinner .rinput{
+    margin-top: 0px;
+    padding-top: 60px;
+}
+.rinput1{
+    margin-top: 80px;
+    text-align: center;
+   
+}
+.rinput1 button{
+    
+    
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width:100px;
+    height:40px; 
+    background-color: #430203;
+    font-size: 20px;
+   
+    color:white;
+    font-weight: 650;
+    
+
+
+}
+
+
+#cty{
+    font-size: 20px;
+    height:25px;
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+
+
+}
+
+
+/* ---------------------------makers------------------------------------- */
+
+
+.mcontent{
+    /* height:1000px; */
+    background-image:linear-gradient(to bottom right,rgb(255, 255, 255,1),rgb(255, 255, 255,1));
+}
+.mcusine h1{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 30px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50PX;
+    z-index: 1;
+    
+}
+.mcard1{
+
+    width:250px;
+    /* height:350px; */
+    margin: 30px;
+    background-image:linear-gradient(to bottom right,#fc7b7b,#a6c0ff);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.mcard1 h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    padding-top: 15px;
+}
+.mcard1 img{  
+    width:200px;
+    height:182px;
+    margin-top: 10px;;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+.mcontainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+    
+}
+.mstar{
+    margin-top:20px;
+}
+.mcity{
+    margin-top: 20px;
+}
+.mcontainer a{
+    text-decoration: none;
+    color:black;
+}
+
+
+/* -----------------------------------foodItem---------------------------- */
+
+.udaily button{
+    width:250px;
+    /* height:400px; */
+    margin: 30px;
+    background-image:linear-gradient(to bottom right,#f54848,#ef95ff);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+
+}
+.udaily ul{
+  
+    text-align: left;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+
+}
+.udaily ul li{
+    /* margin-top: 5px; */
+    font-size: 15px;
+
+}
+.udaily a{
+    text-decoration: none;
+    color: black;
+}
+.u1menu .day{
+    width:250px;
+    margin-left:30px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+.u1menu .udaily button h2{
+    font-size: 25px;
+}
+.daydesc ul li p{
+    margin-bottom: 0px;
+}
+.daydesc ul hr{
+    margin:5px 5px ;
+}
+
+.outerday{
+    width:250px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    
+}
+.daydesc{
+    display: flex;
+    flex-wrap: wrap; 
+    width:200px;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+}
+.u1menu{
+
+   
+    /* height:1000px; */
+    display: flex;
+    justify-content: center;
+    width:100%;
+    
+    margin-top: 500px;
+    flex-wrap: wrap;
+}
+
+
+.mcontainer div:hover{
+    box-shadow: 5px 5px 10px gray;
+
+}
+
+#cart{
+    display: flex;
+    width:800px;
+    height: 300px;
+    margin: auto;
+    
+    background-color: #ef95ff;
+}
+.cart_detail{
+    text-align: center;
+}
+.cart_detail .col1,.col2{
+    width:400px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+
+/* =======================daily_menu============== */
+
+.dmenu .day{
+    width:250px;
+    margin-left:30px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+.dmenu .udaily .wasbtn h2{
+    font-size: 25px;
+}
+
+.dmenu{
+
+   
+    /* height:1000px; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-top:50px;
+    flex-wrap: wrap;
+}
+/* .dmenu .udaily{
+ 
+    display:flex;
+    flex-direction: column;
+} */
+
+.changequant{
+  
+    display: flex;
+    gap:10px;
+    justify-content: center;
+}
+.changequant .cqbtn{
+    font-size: 10px;
+    margin: 0px;
+    padding:0px;
+    width:100px;
+}
+
+.udaily .wasbtn{
+    width:250px;
+    height:360px;
+    margin: 30px;
+    background-image:linear-gradient(to bottom right,#f54848,#ef95ff);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+
+/* ====================registered details============= */
+
+.reg_info{
+    margin-top: 200px;
+
+}
+.first_nm{
+    color: #f54848;
+}
+
+/* ================nav search changes=== */
+.search{
+    position: absolute;
+    width:100%;
+    margin:auto;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+
+
+   
+
+
+}
+.search input{
+
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    padding: 5px;
+    /* margin-right: 10px; */
+    margin-top: 5px;
+}
+.search button{
+    display: inline;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 20px;
+    color: white;
+}
+.search button:hover{
+    color: red;
+    transition: 0.5s;
+}
+/* ===============================join us=============================== */
+.services{
+    position:absolute;
+    width:100%;
+    margin: auto;
+    margin-top: 300px;
+    border: 2px solid black;
+    text-align: center;
+}
+.services a button{
+    margin: 20px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #430203;
+    color: white;
+    padding:5px;
+
+}
+
+.services a button:hover{
+    box-shadow: 5px 5px 5px grey;
+}
+
+
+
+/* ===================food update============================== */
+.fu{
+    position: absolute;
+    margin-top: 150px;
+}
+
+/* ==========================location============== */
+
+#form{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+    /* height: 50%; */
+    width: 30%;
+    margin: auto;
+    margin-top:120px;
+    margin-left: 600px;
+    border: 2px solid black;
+    text-align: center;
+ } 
+ .formloc1{
+    
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+    width: 30%;
+    margin-left: 600px;
+    margin-top:250px;
+    border: 2px solid black;
+    text-align: center;
+    /* display:none; */
+
+ }
+
+
+ /* ========================================cart.html========================================= */
+.placeorder{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.placeorder button{
+    border: 2px solid black;
+    border-radius: 5px;
+    background:linear-gradient(to bottom right,rgb(242, 191, 97),rgb(232, 29, 29));
+
+    font-size: 20px;
+}
+
+.placeorder button:hover{
+   
+    background:linear-gradient(to bottom right,rgb(232, 29, 29),rgb(242, 191, 97));
+    
+    transition: 5s;
+}
+
+
+
+ /* ==========================================summary.html========================================== */
+ .summary{
+    position: absolute;
+    margin-top:150px;
+    width:50%;
+    margin-left: 25%;
+
+ }
+ /* ===================================================showloc====================================== */
+
+
+ .showloc{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    left: 17%;
+    }
+    
+    .card-custom {
+    border-bottom-left-radius: 10% 50%;
+    border-top-left-radius: 10% 50%;
+    background-color: #f8f9fa ;
+    }
+    
+    
+    .input-custom {
+    background-color: white ;
+    }
+    
+    .white-text {
+    color: hsl(52, 0%, 98%);
+    font-weight: 100 ;
+    font-size: 14px;
+    }
+    
+    .back-button {
+    background-color: hsl(52, 0%, 98%);
+    font-weight: 700;
+    color: black ;
+    margin-top: 50px ;
+    }
+/* ============================================================================     */

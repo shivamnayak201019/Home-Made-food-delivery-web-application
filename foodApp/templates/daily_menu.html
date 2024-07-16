@@ -1,0 +1,112 @@
+{%extends 'nav.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        {%load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/foodApp/static/HM.css">
+
+    
+</head>
+{%block mymessage%}
+<body>
+       
+<div class="mcontent">
+        <div class="mcusine">
+            <h1>Weeky Menu</h1>
+        </div>
+        <div class="mcontainer">
+               
+                <a href="">
+                <div class="mcard1">
+                        
+                                        <image src="/foodApp/static/MAKER1.png" alt="Maker1"></image>
+        
+                                        <p><h1>{{chefAddrObj.chefForeign.cf_first_name}}</h1></p>
+                                        <div class="mstar">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="mcity">
+                                            <h2>{{chefAddrObj.chefLocality}}</h2>
+                                        </div>
+                       
+                    
+                     
+                </div>
+                </a>
+               
+                
+        </div>
+</div>
+
+
+        <div class="dmenu">
+                {%for j in chefFood%}
+              
+                <div class="day1">
+                        
+                        <div class="day">
+                                <h2>{{j.item_date}}</h2>
+                        </div>
+                        
+                        <div class="udaily">
+                               
+                                <div class="wasbtn" >
+                                        <h2>Morning Breakfast</h2>
+                                        
+                                        <a href="">
+
+                                        <image src="{{j.item_image.url}}"></image>
+                                        <div class="outerday">
+                                                <div class="daydesc">
+                                                        <ul>
+                                                                <li><p id="spec">Today's Special:{{j.item_name}}</p></li>
+                                                                <hr>
+                                                                <li><p>Quantity Available in Kg: {{j.item_quantity}}</p></li>
+                                                                <hr>
+                                                              
+                                                        
+                                                                <li><p id="cost1">Per Kg price:{{j.item_price}}</p></li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                
+                                
+                                
+                                </a>
+                        </div>
+                              <form method="POST" action="{%url 'addToCart'%}?sendSpec={{sendSpec}}&sendChefId={{sendChefId}}">
+                                {%csrf_token%}
+                                <input type="hidden" name="add" value="{{j.id}}">
+                                <button type="submit">Add to Cart</button>
+                              </form>
+                                
+        
+                        </div>
+                       
+                </div>
+                {%endfor%}
+               
+                
+        </div>
+
+       
+
+
+</body>
+{%endblock%}
+</html>

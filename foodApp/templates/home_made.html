@@ -1,0 +1,60 @@
+{%extends 'nav.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Made Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/HM.css">
+
+    
+</head>
+<body>
+    {%block mymessage%}
+    <!-- <nav >
+        <div class="navout">
+            <button class="hm_logo"><img  src="home made logo.png"></button>
+            
+            <button><a href=""><i class="fa-solid fa-magnifying-glass"></i>Search</a></button>
+                <button><a href="home_made.html"><i class="fa-solid fa-house"></i>Home</a></button>
+                <button><a href="HM_LOGIN.html"><i class="fa-solid fa-user"></i>Login</a></button>
+                <button><a href=""><i class="fa-solid fa-users"></i>Join Us</a></button>
+                <button><a href=""><i class="fa-solid fa-cart-shopping"></i>Cart</a></button>
+        
+        </div>
+        
+    </nav> -->
+    <div class="content">
+        <div class="cusine">
+            <h1><span class="multiple-text"></span></h1>
+        </div>
+        <div class="container">
+                {%for i in foodobj%}
+                        <div class="card1">
+                                <a href="{%url 'chefloc' i.pk %}">
+                                <image src="{{i.image.url}}" alt=""></image>
+                                    
+                                <p><h1>{{i.region}}</h1></p>
+                                <input type="hidden" name=chefloc value="{{i.region}}">
+                                </a>
+                               
+                        </div>
+                        {%endfor%}
+                
+                        
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/foodApp/static/homeMade.js"></script>
+
+    {%endblock%}
+</body>
+</html>
